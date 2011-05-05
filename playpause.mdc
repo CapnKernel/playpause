@@ -1,0 +1,60 @@
+PCBNEW-LibDoc----V1  Thu 21 Apr 2011 07:07:39 PM EST
+#
+$MODULE GS3
+Li GS3
+Cd Pontet Goute de soudure
+$EndMODULE
+#
+$MODULE HC-33UV
+Li HC-33UV
+Cd Quartz boitier HC-33U Vertical
+Kw QUARTZ DEV
+$EndMODULE
+#
+$MODULE LED-1206
+Li LED-1206
+Cd LED 1206 smd package
+Kw LED led 1206 SMD smd SMT smt smdled SMDLED smtled SMTLED
+$EndMODULE
+#
+$MODULE PINTST
+Li PINTST
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+$EndMODULE
+#
+$MODULE SIL-4
+Li SIL-4
+Cd Connecteur 4 pibs
+Kw CONN DEV
+$EndMODULE
+#
+$MODULE GS3-mjd
+Li GS3-mjd
+Cd Pontet Goute de soudure
+$EndMODULE
+#
+$MODULE CRYSTAL-mjd
+Li CRYSTAL-mjd
+Cd Quartz boitier HC-33U Vertical
+Kw QUARTZ DEV
+$EndMODULE
+#
+$MODULE SMDPAD
+Li SMDPAD
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+$EndMODULE
+#
+$MODULE SIL-4-mjd
+Li SIL-4-mjd
+Cd Connecteur 4 pibs
+Kw CONN DEV
+$EndMODULE
+#
+$MODULE GS4-mjd
+Li GS4-mjd
+Cd Custom 4-way solder pad
+$EndMODULE
+#
+$EndLIBDOC
