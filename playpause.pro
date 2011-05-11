@@ -1,4 +1,4 @@
-update=Thu 05 May 2011 11:21:33 AM EST
+update=Wed 11 May 2011 11:01:28 PM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -79,7 +79,7 @@ LibName31=atmel
 LibName32=atmel2
 [pcbnew]
 version=1
-PadDrlX=320
+PadDrlX=0
 PadDimH=600
 PadDimV=600
 BoardThickness=630

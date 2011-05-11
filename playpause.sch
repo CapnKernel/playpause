@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 04 May 2011 01:09:04 PM EST
+EESchema Schematic File Version 2  date Thu 12 May 2011 08:10:24 AM EST
 LIBS:playpause
 LIBS:power
 LIBS:device
@@ -36,7 +36,7 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 1
 Title "Playpause"
-Date "4 may 2011"
+Date "11 may 2011"
 Rev "v1"
 Comp ""
 Comment1 ""
@@ -44,53 +44,75 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 3850 1800
+$Comp
+L CONN_1 P2
+U 1 1 4DCA84FD
+P 5750 2550
+F 0 "P2" H 5800 2550 40  0000 L CNN
+F 1 "CONN_1" H 5750 2605 30  0001 C CNN
+	1    5750 2550
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	3850 1700 3850 2050
-Connection ~ 4850 2750
+	5900 2550 5950 2550
 Wire Wire Line
-	4850 2750 4850 2450
+	5900 2150 5950 2150
 Wire Wire Line
-	4850 2450 4950 2450
+	5550 2450 5950 2450
+Connection ~ 4350 2750
 Wire Wire Line
-	8350 2050 8350 1800
+	8650 2750 8650 2550
 Wire Wire Line
-	8350 1800 3850 1800
-Connection ~ 3850 2050
+	8650 2750 3850 2750
+Connection ~ 4950 2050
 Wire Wire Line
-	3700 2350 3850 2350
-Wire Wire Line
-	3700 2150 4950 2150
-Connection ~ 3850 2750
-Wire Wire Line
-	3850 2350 3850 2850
-Connection ~ 4050 2750
-Connection ~ 4050 2250
-Wire Wire Line
-	4050 2350 4050 2250
-Wire Wire Line
-	5500 2050 5650 2050
-Wire Wire Line
-	4350 2350 4350 2150
-Connection ~ 4350 2150
-Wire Wire Line
-	5650 2250 4900 2250
-Wire Wire Line
-	3700 2250 4400 2250
-Wire Wire Line
-	4400 2050 3700 2050
+	4900 2050 5050 2050
 Wire Wire Line
 	4950 2150 4950 2050
 Wire Wire Line
-	4900 2050 5000 2050
-Connection ~ 4950 2050
+	4400 2050 3700 2050
 Wire Wire Line
-	3850 2750 8350 2750
+	3700 2250 4400 2250
 Wire Wire Line
-	8350 2750 8350 2550
-Connection ~ 4350 2750
+	5950 2250 4900 2250
+Connection ~ 4350 2150
 Wire Wire Line
-	5550 2450 5650 2450
+	4350 2350 4350 2150
+Wire Wire Line
+	5550 2050 5950 2050
+Wire Wire Line
+	4050 2350 4050 2250
+Connection ~ 4050 2250
+Connection ~ 4050 2750
+Wire Wire Line
+	3850 2850 3850 2350
+Connection ~ 3850 2750
+Wire Wire Line
+	3700 2150 4950 2150
+Wire Wire Line
+	3850 2350 3700 2350
+Connection ~ 3850 2050
+Wire Wire Line
+	8650 1800 3850 1800
+Wire Wire Line
+	8650 1800 8650 2050
+Wire Wire Line
+	4950 2450 4850 2450
+Wire Wire Line
+	4850 2450 4850 2750
+Connection ~ 4850 2750
+Wire Wire Line
+	3850 1700 3850 2050
+Connection ~ 3850 1800
+$Comp
+L CONN_1 P1
+U 1 1 4DCA84C8
+P 5750 2150
+F 0 "P1" H 5800 2150 40  0000 L CNN
+F 1 "CONN_1" H 5750 2205 30  0001 C CNN
+	1    5750 2150
+	-1   0    0    1   
+$EndComp
 $Comp
 L +5V #PWR01
 U 1 1 4DC0A8D9
@@ -103,11 +125,11 @@ $EndComp
 $Comp
 L ATTINY85-S IC1
 U 1 1 4DC0A61F
-P 5850 1950
-F 0 "IC1" H 5950 2000 60  0000 C CNN
-F 1 "ATTINY85" H 7850 1200 60  0000 C CNN
-F 2 "SO8-200" H 6100 1200 60  0001 C CNN
-	1    5850 1950
+P 6150 1950
+F 0 "IC1" H 6250 2000 60  0000 C CNN
+F 1 "ATTINY85" H 8150 1200 60  0000 C CNN
+F 2 "SO8-200" H 6400 1200 60  0001 C CNN
+	1    6150 1950
 	1    0    0    -1  
 $EndComp
 Text Label 3750 2050 0    60   ~ 0
@@ -139,10 +161,10 @@ $EndComp
 $Comp
 L R R3
 U 1 1 4D307DDF
-P 5250 2050
-F 0 "R3" V 5330 2050 50  0000 C CNN
-F 1 "68R" V 5250 2050 50  0000 C CNN
-	1    5250 2050
+P 5300 2050
+F 0 "R3" V 5380 2050 50  0000 C CNN
+F 1 "68R" V 5300 2050 50  0000 C CNN
+	1    5300 2050
 	0    1    1    0   
 $EndComp
 $Comp

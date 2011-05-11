@@ -1,4 +1,4 @@
-PCBNEW-LibDoc----V1  Thu 21 Apr 2011 07:07:39 PM EST
+PCBNEW-LibDoc----V1  Wed 11 May 2011 10:56:59 PM EST
 #
 $MODULE GS3
 Li GS3
@@ -40,12 +40,6 @@ Cd Quartz boitier HC-33U Vertical
 Kw QUARTZ DEV
 $EndMODULE
 #
-$MODULE SMDPAD
-Li SMDPAD
-Cd module 1 pin (ou trou mecanique de percage)
-Kw DEV
-$EndMODULE
-#
 $MODULE SIL-4-mjd
 Li SIL-4-mjd
 Cd Connecteur 4 pibs
@@ -55,6 +49,18 @@ $EndMODULE
 $MODULE GS4-mjd
 Li GS4-mjd
 Cd Custom 4-way solder pad
+$EndMODULE
+#
+$MODULE SOIC8
+Li SOIC8
+Cd module CMS SOJ 8 pins etroit
+Kw CMS SOJ
+$EndMODULE
+#
+$MODULE SMDPAD
+Li SMDPAD
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
 $EndMODULE
 #
 $EndLIBDOC

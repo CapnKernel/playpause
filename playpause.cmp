@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-01-28 BZR 2765)-stable date = Thu 05 May 2011 11:20:45 AM EST
+Cmp-Mod V01 Created by CvPCB (2011-01-28 BZR 2765)-stable date = Wed 11 May 2011 10:49:42 PM EST
 
 BeginCmp
 TimeStamp = /4D3076CE;
@@ -18,7 +18,7 @@ BeginCmp
 TimeStamp = /4DC0A61F;
 Reference = IC1;
 ValeurCmp = ATTINY85;
-IdModule  = SO8N;
+IdModule  = SOIC8;
 EndCmp
 
 BeginCmp
@@ -26,6 +26,20 @@ TimeStamp = /4D3075CD;
 Reference = JP1;
 ValeurCmp = USB_2;
 IdModule  = USB_PCB_FINGERS;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCA84C8;
+Reference = P1;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCA84FD;
+Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
 EndCmp
 
 BeginCmp
