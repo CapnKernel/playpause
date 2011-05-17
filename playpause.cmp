@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-01-28 BZR 2765)-stable date = Wed 11 May 2011 10:49:42 PM EST
+Cmp-Mod V01 Created by CvPCB (2011-01-28 BZR 2765)-stable date = Fri 13 May 2011 06:08:18 PM EST
 
 BeginCmp
 TimeStamp = /4D3076CE;
@@ -38,6 +38,55 @@ EndCmp
 BeginCmp
 TimeStamp = /4DCA84FD;
 Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBC64;
+Reference = P3;
+ValeurCmp = ISP;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCA1;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCA6;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCAB;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCB9;
+Reference = P7;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCBA;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCBB;
+Reference = P9;
 ValeurCmp = CONN_1;
 IdModule  = SMDPAD;
 EndCmp

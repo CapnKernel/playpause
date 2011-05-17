@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Wed 11 May 2011 10:49:42 PM EST
+# EESchema Netlist Version 1.1 created  Fri 13 May 2011 06:08:18 PM EST
 (
  ( /4D3076CE SM1206POL D1 3.6V
   ( 1 GND )
@@ -13,9 +13,9 @@
   ( 2 ? )
   ( 3 N-000007 )
   ( 4 GND )
-  ( 5 N-000002 )
-  ( 6 N-000001 )
-  ( 7 N-000005 )
+  ( 5 N-000010 )
+  ( 6 N-000003 )
+  ( 7 N-000009 )
   ( 8 +5V )
  )
  ( /4D3075CD USB_PCB_FINGERS JP1 USB_2
@@ -25,25 +25,51 @@
   ( 4 GND )
  )
  ( /4DCA84C8 SMDPAD P1 CONN_1
-  ( 1 N-000001 )
+  ( 1 N-000003 )
  )
  ( /4DCA84FD SMDPAD P2 CONN_1
   ( 1 N-000004 )
+ )
+ ( /4DCBBC64 pin_array_3x2 P3 ISP
+  ( 1 /MISO )
+  ( 2 /VTG )
+  ( 3 /SCK )
+  ( 4 /MOSI )
+  ( 5 /RST )
+  ( 6 GND )
+ )
+ ( /4DCBBCA1 SMDPAD P4 CONN_1
+  ( 1 /MISO )
+ )
+ ( /4DCBBCA6 SMDPAD P5 CONN_1
+  ( 1 /SCK )
+ )
+ ( /4DCBBCAB SMDPAD P6 CONN_1
+  ( 1 /RST )
+ )
+ ( /4DCBBCB9 SMDPAD P7 CONN_1
+  ( 1 /VTG )
+ )
+ ( /4DCBBCBA SMDPAD P8 CONN_1
+  ( 1 /MOSI )
+ )
+ ( /4DCBBCBB SMDPAD P9 CONN_1
+  ( 1 GND )
  )
  ( /4D307E0E SM1206 R1 1k5
   ( 1 +5V )
   ( 2 /D- )
  )
  ( /4D307DDA SM1206 R2 68R
-  ( 1 N-000005 )
+  ( 1 N-000009 )
   ( 2 /D+ )
  )
  ( /4D307DDF SM1206 R3 68R
-  ( 1 N-000002 )
+  ( 1 N-000010 )
   ( 2 /D- )
  )
  ( /4D30766C SW_FSMJSMA S1 PAUSE
-  ( 1 N-000007 )
+  ( 1 ? )
   ( 3 GND )
  )
 )

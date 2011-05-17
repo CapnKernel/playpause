@@ -1,4 +1,4 @@
-PCBNEW-LibDoc----V1  Wed 11 May 2011 10:56:59 PM EST
+PCBNEW-LibDoc----V1  Thu 12 May 2011 10:12:50 AM EST
 #
 $MODULE GS3
 Li GS3
@@ -55,6 +55,12 @@ $MODULE SOIC8
 Li SOIC8
 Cd module CMS SOJ 8 pins etroit
 Kw CMS SOJ
+$EndMODULE
+#
+$MODULE POGOPAD
+Li POGOPAD
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
 $EndMODULE
 #
 $MODULE SMDPAD
