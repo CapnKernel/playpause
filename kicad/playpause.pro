@@ -1,4 +1,4 @@
-update=Wed 18 May 2011 01:28:49 AM EST
+update=Wed 18 May 2011 02:47:23 PM EST
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -76,7 +76,6 @@ LibName28=opto
 LibName29=contrib
 LibName30=valves
 LibName31=atmel
-LibName32=atmel2
 [pcbnew]
 version=1
 PadDrlX=0

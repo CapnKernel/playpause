@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: 2010-07-13 20:25:52
+#
+$CMP ATTINY85-S
+D ATTINY45, SO8 Wide, 8k Flash, 512B SRAM, 512B EEPROM, Debug Wire
+K AVR 8bit Microcontroller tinyAVR
+F http://www.atmel.com/dyn/resources/prod_documents/doc2586.pdf
+$ENDCMP
+#
+#End Doc Library

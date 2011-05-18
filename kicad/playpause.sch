@@ -30,7 +30,6 @@ LIBS:opto
 LIBS:contrib
 LIBS:valves
 LIBS:atmel
-LIBS:atmel2
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
