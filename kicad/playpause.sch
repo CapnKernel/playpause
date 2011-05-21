@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 13 May 2011 05:55:10 PM EST
+EESchema Schematic File Version 2  date Sun 22 May 2011 09:28:58 AM EST
 LIBS:playpause
 LIBS:power
 LIBS:device
@@ -35,8 +35,8 @@ EELAYER END
 $Descr A4 11700 8267
 Sheet 1 1
 Title "Playpause"
-Date "13 may 2011"
-Rev "v1"
+Date "21 may 2011"
+Rev "v3"
 Comp ""
 Comment1 ""
 Comment2 ""

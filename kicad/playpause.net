@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Fri 13 May 2011 06:08:18 PM EST
+# EESchema Netlist Version 1.1 created  Sun 22 May 2011 09:26:53 AM EST
 (
  ( /4D3076CE SM1206POL D1 3.6V
   ( 1 GND )
@@ -13,9 +13,9 @@
   ( 2 ? )
   ( 3 N-000007 )
   ( 4 GND )
-  ( 5 N-000010 )
+  ( 5 N-000009 )
   ( 6 N-000003 )
-  ( 7 N-000009 )
+  ( 7 N-000008 )
   ( 8 +5V )
  )
  ( /4D3075CD USB_PCB_FINGERS JP1 USB_2
@@ -61,15 +61,15 @@
   ( 2 /D- )
  )
  ( /4D307DDA SM1206 R2 68R
-  ( 1 N-000009 )
+  ( 1 N-000008 )
   ( 2 /D+ )
  )
  ( /4D307DDF SM1206 R3 68R
-  ( 1 N-000010 )
+  ( 1 N-000009 )
   ( 2 /D- )
  )
  ( /4D30766C SW_FSMJSMA S1 PAUSE
-  ( 1 ? )
+  ( 1 N-000007 )
   ( 3 GND )
  )
 )
