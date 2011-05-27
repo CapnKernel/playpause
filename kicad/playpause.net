@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sun 22 May 2011 09:26:53 AM EST
+# EESchema Netlist Version 1.1 created  Sat 28 May 2011 01:03:55 AM EST
 (
  ( /4D3076CE SM1206POL D1 3.6V
   ( 1 GND )
@@ -70,7 +70,9 @@
  )
  ( /4D30766C SW_FSMJSMA S1 PAUSE
   ( 1 N-000007 )
+  ( 2 ? )
   ( 3 GND )
+  ( 4 ? )
  )
 )
 *
