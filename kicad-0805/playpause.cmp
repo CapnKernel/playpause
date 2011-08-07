@@ -1,0 +1,122 @@
+Cmp-Mod V01 Created by CvPCB (2011-01-28 BZR 2765)-stable date = Fri 13 May 2011 06:08:18 PM EST
+
+BeginCmp
+TimeStamp = /4D3076CE;
+Reference = D1;
+ValeurCmp = 3.6V;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D307BE4;
+Reference = D2;
+ValeurCmp = 3.6V;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DC0A61F;
+Reference = IC1;
+ValeurCmp = ATTINY85;
+IdModule  = SOIC8;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D3075CD;
+Reference = JP1;
+ValeurCmp = USB_2;
+IdModule  = USB_PCB_FINGERS;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCA84C8;
+Reference = P1;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCA84FD;
+Reference = P2;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBC64;
+Reference = P3;
+ValeurCmp = ISP;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCA1;
+Reference = P4;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCA6;
+Reference = P5;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCAB;
+Reference = P6;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCB9;
+Reference = P7;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCBA;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DCBBCBB;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = SMDPAD;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D307E0E;
+Reference = R1;
+ValeurCmp = 1k5;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D307DDA;
+Reference = R2;
+ValeurCmp = 68R;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D307DDF;
+Reference = R3;
+ValeurCmp = 68R;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D30766C;
+Reference = S1;
+ValeurCmp = PAUSE;
+IdModule  = SW_FSMJSMA;
+EndCmp
+
+EndListe
