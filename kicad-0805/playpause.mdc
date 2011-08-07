@@ -1,4 +1,4 @@
-PCBNEW-LibDoc----V1  Thu 12 May 2011 10:12:50 AM EST
+PCBNEW-LibDoc----V1  Fri 29 Jul 2011 01:39:40 AM HKT
 #
 $MODULE GS3
 Li GS3
@@ -67,6 +67,12 @@ $MODULE SMDPAD
 Li SMDPAD
 Cd module 1 pin (ou trou mecanique de percage)
 Kw DEV
+$EndMODULE
+#
+$MODULE ZEBRA-6
+Li ZEBRA-6
+Cd Connecteur 6 pins
+Kw CONN DEV
 $EndMODULE
 #
 $EndLIBDOC

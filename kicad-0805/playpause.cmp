@@ -1,17 +1,24 @@
-Cmp-Mod V01 Created by CvPCB (2011-01-28 BZR 2765)-stable date = Fri 13 May 2011 06:08:18 PM EST
+Cmp-Mod V01 Created by CvPCB (2011-07-12 BZR 3047)-stable date = Sun 07 Aug 2011 11:30:35 AM HKT
+
+BeginCmp
+TimeStamp = /4E316514;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
 
 BeginCmp
 TimeStamp = /4D3076CE;
 Reference = D1;
 ValeurCmp = 3.6V;
-IdModule  = SM1206POL;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D307BE4;
 Reference = D2;
 ValeurCmp = 3.6V;
-IdModule  = SM1206POL;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -29,17 +36,17 @@ IdModule  = USB_PCB_FINGERS;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DCA84C8;
+TimeStamp = /4E3189A2;
 Reference = P1;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
+ValeurCmp = PGM;
+IdModule  = ZEBRA-6;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DCA84FD;
+TimeStamp = /4E3189CA;
 Reference = P2;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
+ValeurCmp = PGM;
+IdModule  = ZEBRA-6;
 EndCmp
 
 BeginCmp
@@ -50,66 +57,24 @@ IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DCBBCA1;
-Reference = P4;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DCBBCA6;
-Reference = P5;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DCBBCAB;
-Reference = P6;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DCBBCB9;
-Reference = P7;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DCBBCBA;
-Reference = P8;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DCBBCBB;
-Reference = P9;
-ValeurCmp = CONN_1;
-IdModule  = SMDPAD;
-EndCmp
-
-BeginCmp
 TimeStamp = /4D307E0E;
 Reference = R1;
 ValeurCmp = 1k5;
-IdModule  = SM1206;
-EndCmp
-
-BeginCmp
-TimeStamp = /4D307DDA;
-Reference = R2;
-ValeurCmp = 68R;
-IdModule  = SM1206;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D307DDF;
+Reference = R2;
+ValeurCmp = 68R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D307DDA;
 Reference = R3;
 ValeurCmp = 68R;
-IdModule  = SM1206;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp

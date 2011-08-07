@@ -1,4 +1,4 @@
-update=Wed 18 May 2011 02:47:23 PM EST
+update=Fri 29 Jul 2011 11:40:09 AM HKT
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -79,8 +79,8 @@ LibName31=atmel
 [pcbnew]
 version=1
 PadDrlX=0
-PadDimH=600
-PadDimV=600
+PadDimH=200
+PadDimV=550
 BoardThickness=630
 SgPcb45=1
 TxtPcbV=800
