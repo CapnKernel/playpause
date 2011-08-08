@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-12 BZR 3047)-stable date = Sun 07 Aug 2011 11:30:35 AM HKT
+Cmp-Mod V01 Created by CvPCB (2011-07-12 BZR 3047)-stable date = Mon 08 Aug 2011 12:17:27 HKT
 
 BeginCmp
 TimeStamp = /4E316514;
@@ -53,7 +53,14 @@ BeginCmp
 TimeStamp = /4DCBBC64;
 Reference = P3;
 ValeurCmp = ISP;
-IdModule  = pin_array_3x2;
+IdModule  = pin_array_3x2_no_ss;
+EndCmp
+
+BeginCmp
+TimeStamp = /4E3F62DA;
+Reference = P4;
+ValeurCmp = EXT;
+IdModule  = SMDPAD;
 EndCmp
 
 BeginCmp

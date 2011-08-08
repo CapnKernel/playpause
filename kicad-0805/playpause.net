@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sun 07 Aug 2011 11:30:35 AM HKT
+# EESchema Netlist Version 1.1 created  Mon 08 Aug 2011 12:17:27 HKT
 (
  ( /4E316514 SM0805 C1 100n
   ( 1 +5V )
@@ -13,13 +13,13 @@
   ( 2 /D- )
  )
  ( /4DC0A61F SOIC8 IC1 ATTINY85
-  ( 1 N-000002 )
-  ( 2 ? )
-  ( 3 N-000012 )
+  ( 1 N-000001 )
+  ( 2 N-000016 )
+  ( 3 N-000015 )
   ( 4 GND )
-  ( 5 N-000015 )
-  ( 6 N-000003 )
-  ( 7 N-000016 )
+  ( 5 N-000007 )
+  ( 6 N-000006 )
+  ( 7 N-000017 )
   ( 8 +5V )
  )
  ( /4D3075CD USB_PCB_FINGERS JP1 USB_2
@@ -30,11 +30,11 @@
  )
  ( /4E3189A2 ZEBRA-6 P1 PGM
   ( 1 GND )
-  ( 2 N-000002 )
+  ( 2 N-000001 )
   ( 3 +5V )
-  ( 4 N-000016 )
-  ( 5 N-000003 )
-  ( 6 N-000015 )
+  ( 4 N-000017 )
+  ( 5 N-000006 )
+  ( 6 N-000007 )
  )
  ( /4E3189CA ZEBRA-6 P2 PGM
   ( 1 GND )
@@ -44,7 +44,7 @@
   ( 5 /MISO )
   ( 6 /MOSI )
  )
- ( /4DCBBC64 pin_array_3x2 P3 ISP
+ ( /4DCBBC64 pin_array_3x2_no_ss P3 ISP
   ( 1 /MISO )
   ( 2 /VTG )
   ( 3 /SCK )
@@ -52,20 +52,23 @@
   ( 5 /RST )
   ( 6 GND )
  )
+ ( /4E3F62DA SMDPAD P4 EXT
+  ( 1 N-000016 )
+ )
  ( /4D307E0E SM0805 R1 1k5
   ( 1 +5V )
   ( 2 /D- )
  )
  ( /4D307DDF SM0805 R2 68R
-  ( 1 N-000015 )
+  ( 1 N-000007 )
   ( 2 /D- )
  )
  ( /4D307DDA SM0805 R3 68R
-  ( 1 N-000016 )
+  ( 1 N-000017 )
   ( 2 /D+ )
  )
  ( /4D30766C SW_FSMJSMA S1 PAUSE
-  ( 1 N-000012 )
+  ( 1 N-000015 )
   ( 2 ? )
   ( 3 GND )
   ( 4 ? )
