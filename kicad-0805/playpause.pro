@@ -43,6 +43,8 @@ offY_E=0
 RptD_X=0
 RptD_Y=100
 RptLab=1
+SimCmd=
+UseNetN=0
 LabSize=60
 [eeschema/libraries]
 LibName1=playpause
@@ -78,11 +80,10 @@ LibName30=valves
 LibName31=atmel
 [pcbnew]
 version=1
-PadDrlX=0
-PadDimH=200
-PadDimV=550
+PadDrlX=320
+PadDimH=600
+PadDimV=600
 BoardThickness=630
-SgPcb45=1
 TxtPcbV=800
 TxtPcbH=600
 TxtModV=600
