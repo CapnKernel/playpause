@@ -1,3 +1,0 @@
-[submodule "src/vusb"]
-	path = src/vusb
-	url = git://github.com/CapnKernel/vusb.git
