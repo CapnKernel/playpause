@@ -19,9 +19,10 @@ F_CPU   = 16500000L # in Hz
 FUSE_L  = 0xE1 # see below for fuse values for particular devices
 FUSE_H  = 0xDD
 AVRDUDE = avrdude -c $(PROGRAMMER) -P usb -p $(DEVICE) # edit this line for your programmer
+USBDRV  = vusb/usbdrv
 
-CFLAGS  = -Iusbdrv -I. -DDEBUG_LEVEL=0
-OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o playpause.o
+CFLAGS  = -I$(USBDRV) -I. -DDEBUG_LEVEL=0
+OBJECTS = $(USBDRV)/usbdrv.o $(USBDRV)/usbdrvasm.o $(USBDRV)/oddebug.o playpause.o
 
 COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 
@@ -76,7 +77,7 @@ flash: main.hex
 
 # rule for deleting dependent files (those which can be built by Make):
 clean:
-	rm -f main.hex main.lst main.obj main.cof main.list main.map main.eep.hex main.elf *.o usbdrv/*.o main.s usbdrv/oddebug.s usbdrv/usbdrv.s
+	rm -f main.hex main.lst main.obj main.cof main.list main.map main.eep.hex main.elf *.o $(USBDRV)/*.o main.s $(USBDRV)/oddebug.s $(USBDRV)/usbdrv.s
 
 main.o: main.c usbconfig.h
 
@@ -98,11 +99,11 @@ main.o: main.c usbconfig.h
 
 # file targets:
 
-# Since we don't want to ship the driver multipe times, we copy it into this project:
-usbdrv:
-	cp -r $(USBDRV) .
+# # Since we don't want to ship the driver multipe times, we copy it into this project:
+# usbdrv:
+# 	cp -r $(USBDRV) .
 
-main.elf: usbdrv $(OBJECTS)	# usbdrv dependency only needed because we copy it
+main.elf: $(USBDRV) $(OBJECTS)	# usbdrv dependency only needed because we copy it
 	$(COMPILE) -o main.elf $(OBJECTS) -Wl,-Map=$(@:.elf=.map),--cref
 
 main.hex: main.elf
