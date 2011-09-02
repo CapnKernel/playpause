@@ -1,0 +1,80 @@
+How to build the software:
+
+[mjd@xiaomao git]$ git clone git://github.com/CapnKernel/playpause.git
+Cloning into playpause...
+remote: Counting objects: 130, done.
+remote: Compressing objects: 100% (116/116), done.
+remote: Total 130 (delta 70), reused 40 (delta 12)
+Receiving objects: 100% (130/130), 89.68 KiB | 23 KiB/s, done.
+Resolving deltas: 100% (70/70), done.
+[mjd@xiaomao git]$ cd playpause/
+[mjd@xiaomao playpause]$ git submodule init
+Submodule 'src/vusb' (git://github.com/CapnKernel/vusb.git) registered for path 'src/vusb'
+[mjd@xiaomao playpause]$ git submodule update
+Cloning into src/vusb...
+remote: Counting objects: 111, done.
+remote: Compressing objects: 100% (72/72), done.
+remote: Total 111 (delta 39), reused 111 (delta 39)
+Receiving objects: 100% (111/111), 283.48 KiB | 102 KiB/s, done.
+Resolving deltas: 100% (39/39), done.
+Submodule path 'src/vusb': checked out '00ead0d1f280209ffc69095d6c5fee15398f69ad'
+[mjd@xiaomao playpause]$ cd src
+[mjd@xiaomao src]$ make hex
+avr-gcc -Wall -Os -DF_CPU=16500000L  -Ivusb/usbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny85 -c vusb/usbdrv/usbdrv.c -o vusb/usbdrv/usbdrv.o
+avr-gcc -Wall -Os -DF_CPU=16500000L  -Ivusb/usbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny85 -x assembler-with-cpp -c vusb/usbdrv/usbdrvasm.S -o vusb/usbdrv/usbdrvasm.o
+avr-gcc -Wall -Os -DF_CPU=16500000L  -Ivusb/usbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny85 -c vusb/usbdrv/oddebug.c -o vusb/usbdrv/oddebug.o
+avr-gcc -Wall -Os -DF_CPU=16500000L  -Ivusb/usbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny85 -c playpause.c -o playpause.o
+avr-gcc -Wall -Os -DF_CPU=16500000L  -Ivusb/usbdrv -I. -DDEBUG_LEVEL=0 -mmcu=attiny85 -o main.elf vusb/usbdrv/usbdrv.o vusb/usbdrv/usbdrvasm.o vusb/usbdrv/oddebug.o playpause.o -Wl,-Map=main.map,--cref
+rm -f main.hex main.eep.hex
+avr-objcopy -j .text -j .data -O ihex main.elf main.hex
+avr-size main.hex
+   text	   data	    bss	    dec	    hex	filename
+      0	   2076	      0	   2076	    81c	main.hex
+[mjd@xiaomao src]$ su
+Password: 
+[root@xiaomao src]# # Adjust the "avrisp2" and other parameters to suit your programmer
+[root@xiaomao src]# avrdude -c avrisp2 -P usb -p attiny85 -q
+
+avrdude: AVR device initialized and ready to accept instructions
+avrdude: Device signature = 0x1e930b
+avrdude: current erase-rewrite cycle count is -256 (if being tracked)
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+
+[root@xiaomao src]# # For your programmer, try: make PROGRAMMER=usbtiny flash
+[root@xiaomao src]# make flash
+avrdude -c avrisp2 -P usb -p attiny85  -U flash:w:main.hex:i
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e930b
+avrdude: NOTE: FLASH memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: current erase-rewrite cycle count is -256 (if being tracked)
+avrdude: erasing chip
+avrdude: reading input file "main.hex"
+avrdude: writing flash (2076 bytes):
+
+Writing | ################################################## | 100% 0.73s
+
+avrdude: 2076 bytes of flash written
+avrdude: verifying flash memory against main.hex:
+avrdude: load data flash data from input file main.hex:
+avrdude: input file main.hex contains 2076 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.55s
+
+avrdude: verifying ...
+avrdude: 2076 bytes of flash verified
+
+avrdude: safemode: Fuses OK
+
+avrdude done.  Thank you.
+
+[root@xiaomao src]# 
+
